@@ -10,6 +10,46 @@
 		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<style>
+			.buttonpay {
+			  display: inline-block;
+			  border-radius: 4px;
+			  background-color: #4CAF50;
+			  border: none;
+			  color: #FFFFFF;
+			  text-align: center;
+			  font-size: 28px;
+			  padding: 20px;
+			  width: 200px;
+			  transition: all 0.5s;
+			  cursor: pointer;
+			  margin: 5px;
+			}
+			
+			.buttonpay span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+			
+			.buttonpay span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+			}
+			
+			.buttonpay:hover span {
+			  padding-right: 25px;
+			}
+			
+			.buttonpay:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			}
+		
 				.center {
 					display: block;
 					margin-left: auto;
@@ -404,19 +444,19 @@
 								</p>
 
 								<div class="is-centered">
-									<img src="./images/Super sub.png" width="50%" height="50%">
-								</div>
-
-								<div class="buttons is-centered">
-									<a href="upi://pay?pn=Subrata%20Sarakar&pa=9002824700%40upi&tn=Donation&am=&cu=INR&url=http%3A%2F%2Fupi.link%2F"><span class="tag is-warning"><h2>Donate Now</h2></span></a>
+									<img src="./images/Super sub.png" width="30%" height="30%">
+								</br>
+									<a href="upi://pay?pn=Subrata%20Sarakar&pa=9002824700%40upi&tn=Donation&am=&cu=INR&url=http%3A%2F%2Fupi.link%2F"><button class="buttonpay" style="vertical-align:middle"><span>Donate</span></button></a>
 									
     
 								</div>
+							    </br>
 								<div class="is-centered">
 									Powered by<img src="./images/bhimupi.jpg" width="25%" height="25%">
 								</div>
 								<p class="content is-medium is-centered">
 									OR
+								    </br>
 									Scan this QR Code to open your UPI Payment App
 																	
 								</p>
@@ -428,7 +468,6 @@
 					</div>
 					
 				</section>
-
 
 				<footer class="footer has-background-light">
 					<div class="content has-text-centered has-text-back has-background-light is-4">
