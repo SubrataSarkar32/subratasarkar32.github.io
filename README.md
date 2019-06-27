@@ -12,7 +12,7 @@ You can donate me via BHIM UPI
 ![Super sub](./images/Supersub(200x200).jpg)
 
 
-[![Donate](./images/bhimupi(100x15).jpg)](upi://pay?pn=Subrata%20Sarakar&pa=9002824700%40upi&tn=Donation&am=&cu=INR&url=http%3A%2F%2Fupi.link%2F)
+[![Donate](./images/bhimupi(100x15).jpg)](upi://pay?pn=Subrata%20Sarakar&pa=9002824700%40upi&tn=Donation&am=&cu=INR&url=http%3A%2F%2Fupi.link%2F)   [Donate](upi://pay?pn=Subrata%20Sarakar&pa=9002824700%40upi&tn=Donation&am=&cu=INR&url=http%3A%2F%2Fupi.link%2F)
 
 
 OR
