@@ -1,586 +1,684 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>subrata | a random guy</title>
-		<link rel="stylesheet" 
-		href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<style>
-			.buttonpay {
-			  display: inline-block;
-			  border-radius: 4px;
-			  background-color: #4CAF50;
-			  border: none;
-			  color: #FFFFFF;
-			  text-align: center;
-			  font-size: 28px;
-			  padding: 20px;
-			  width: 200px;
-			  transition: all 0.5s;
-			  cursor: pointer;
-			  margin: 5px;
-			}
-			
-			.buttonpay span {
-			  cursor: pointer;
-			  display: inline-block;
-			  position: relative;
-			  transition: 0.5s;
-			}
-			
-			.buttonpay span:after {
-			  content: '\00bb';
-			  position: absolute;
-			  opacity: 0;
-			  top: 0;
-			  right: -20px;
-			  transition: 0.5s;
-			}
-			
-			.buttonpay:hover span {
-			  padding-right: 25px;
-			}
-			
-			.buttonpay:hover span:after {
-			  opacity: 1;
-			  right: 0;
-			}
-		
-				.center {
-					display: block;
-					margin-left: auto;
-					margin-right: auto;
-					width: 50%;
-				  }
-		</style>
-	</head>
-	<body>
-				
-		<!-- Body Starts -->
-		<header class="navbar is-fixed-top has-background-light is-transparent">
-			<div class="container ">
-				<div class="navbar-brand">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>subrata | a random guy</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		.buttonpay {
+			display: inline-block;
+			border-radius: 4px;
+			background-color: #4CAF50;
+			border: none;
+			color: #FFFFFF;
+			text-align: center;
+			font-size: 28px;
+			padding: 20px;
+			width: 200px;
+			transition: all 0.5s;
+			cursor: pointer;
+			margin: 5px;
+		}
+
+		.buttonpay span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5s;
+		}
+
+		.buttonpay span:after {
+			content: '\00bb';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.5s;
+		}
+
+		.buttonpay:hover span {
+			padding-right: 25px;
+		}
+
+		.buttonpay:hover span:after {
+			opacity: 1;
+			right: 0;
+		}
+
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Body Starts -->
+	<header class="navbar is-fixed-top has-background-light is-transparent">
+		<div class="container ">
+			<div class="navbar-brand">
 				<a class="navbar-item is-active" id="homeB">
 					<img src="https://raw.githubusercontent.com/SubrataSarkar32/subratasarkar32.github.io/master/images/logo.png" alt="Logo">
-					
+
 				</a>
 				<span class="navbar-burger burger has-background-light" data-target="navbarMenuHeroC">
 					<span></span>
 					<span></span>
 					<span></span>
 				</span>
-				</div>
-				<div id="navbarMenuHeroC" class="navbar-menu">
+			</div>
+			<div id="navbarMenuHeroC" class="navbar-menu">
 				<div class="navbar-end">
 					<a class="navbar-item" id="skillB">
-					Skill
+						Skill
 					</a>
 					<a class="navbar-item" id="workB">
-					Work
+						Work
 					</a>
 					<a class="navbar-item" id="lifeB">
-					About
+						About
 					</a>
 				</div>
-				</div>
 			</div>
-		</header>
+		</div>
+	</header>
 
 
-		<section id="home" class="hero is-fullheight has-background-white-ter">
+	<section id="home" class="hero is-fullheight has-background-white-ter">
 		<!-- Hero head: will stick at the top -->
-			
+
 		<!-- Hero content: will be in the middle -->
 		<div class="hero-body has-background-white-ter">
-			<div class="container has-text-centered has-background-white-ter" >
-				<div class="columns" >
+			<div class="container has-text-centered has-background-white-ter">
+				<div class="columns">
 					<div class="column is-half is-offset-one-quarter">
 						<br>
-						<h1 class="title has-text-black" >
-							<strong id="hello" class="title is-2 has-text-black"></strong> 
+						<h1 class="title has-text-black">
+							<strong id="hello" class="title is-2 has-text-black"></strong>
 							<i class="em em-pray"></i>
 						</h1>
 						<div></div>
-						
-						
+
+
 						<h3 class="subtitle is-3 has-text-justified has-text-weight-light">
-							I am <strong class="has-text-black">Subrata Sarkar</strong>, an computer science 
+							I am <strong class="has-text-black">Subrata Sarkar</strong>, an computer science
 							undergraduate <i class="em em-male-technologist"></i> interested in open source <i class="em em-handshake"></i> and
 							Research in Artificial General Intelligence <i class="em em-robot_face"></i>.
 						</h3>
 					</div>
 				</div>
 				<div class="columns is-centered">
-						<div class="column is-2">
-							<a class="button is-medium is-success" href="">Résumé</a>
-						</div>
-						<div class="column is-2">
-							<a class="button is-medium is-info" id="contactB">Contact</a>
-						</div>
+					<div class="column is-2">
+						<a class="button is-medium is-success" href="">Résumé</a>
+					</div>
+					<div class="column is-2">
+						<a class="button is-medium is-info" id="contactB">Contact</a>
+					</div>
 				</div>
-				<h4 class="subtitle is-4 has-text-weight-light">
-						<strong>P.S.</strong> I'm also a freelancer.
-				</h4>
+				<!--h4 class="subtitle is-4 has-text-weight-light">
+					<strong>P.S.</strong> I'm also a freelancer.
+				</h4-->
 			</div>
 		</div>
-		
+
 		<!-- Hero footer: will stick at the bottom -->
-		
-		</section>
-		<div class="has-background-light">
+
+	</section>
+	<div class="has-background-light">
+		<br>
+		<br>
+	</div>
+
+	<section id="skill" class="has-background-light">
+		<div class="container">
+			<div class="has-background-light">
 				<br>
 				<br>
-		</div>
-				
-		<section id="skill" class="has-background-light">
-			<div class="container">
-				<div class="has-background-light">
-						<br>
-						<br>
-		
+
+			</div>
+			<div class="columns">
+				<div class="column">
+					<h1 class="title">
+						Skill
+					</h1>
+					<p>
+						I started my journey as a game developer in late 2016. But I reallized my games were limbos void of
+						any real adversarial experience that we got through games like chess. Then I started experimenting
+						with speech recognition and later slowly started exploring AI and meeting up with great ideas like
+						A* Pathfinding, Agent Behaviour Trees, and more. And That's when I met Deep Neural Networks and
+						passion burned in my core.
+
+						However that it is not an easy job so I try my best to improve my skills being a Medium bookworm
+						and doing some course once in a while.
+
+					</p>
 				</div>
-				<div class="columns">
-					<div class="column">
-						<h1 class="title">
-							Skill
-						</h1>
-						<p>
-							I started my journey as a game developer in late 2016. But I reallized my games were limbos void of
-							any real adversarial experience that we got through games like chess. Then I started experimenting 
-							with speech recognition and later slowly started exploring AI and meeting up with great ideas like 
-							A* Pathfinding, Agent Behaviour Trees, and more. And That's when I met Deep Neural Networks and 
-							passion burned in my core.
-							
-							However that it is not an easy job so I try my best to improve my skills being a Medium bookworm 
-							and doing some course once in a while.
-								
-						</p>
-					</div>
-					<div class="column is-offset-1">
-						<!-- For later Work -->
-						<!-- <div class="tabs">
+				<div class="column is-offset-1">
+					<!-- For later Work -->
+					<!-- <div class="tabs">
 							<ul>
 								<li class="is-active"><a id="deepT">DL Engineer</a></li>
 								<li><a id="gameT">Game Developer</a></li>
 								<li><a id="filmT">Film-Making</a></li>
 							</ul>
 						</div> -->
-						<div id="tabContent"class="media-content">
-							<div class="content has-text-centered">
-								<h1 class="is-1">
-									<i class="em em-male-technologist"></i>
-								</h1>
-								<h2 class="is-2">Python Developer</h2>
-								<p>
-									As a Python Developer, I enjoy simplyfying and atomating boring stuff as well as designing new neural architechtures that recognizes patterns in the
-									data, placing special attention on better optimizations and perfect hyperparameters.
-								</p>
-								<h4 class="is-4">Languages I Speak:</h4>
-								<div class="tags is-centered"><span class="tag is-info">Python</span><span class="tag is-info">SQL</span><span class="tag is-info">JavaScript</span><span class="tag is-info">C</span></div>
-							
-							
-								<h4 class="is-4">Development Tools:</h4>
-								<div class="tags is-centered"><span class="tag is-warning">GITHUB</span><span class="tag is-warning">Firebase</span><span
-									 class="tag is-warning">GIT</span><span class="tag is-warning">PIP</span><span
-									 class="tag is-warning">GOOGLE COLAB</span><span class="tag is-warning">VSCODE</span></div>
-							
-							
-							
-								<h4 class="is-4">Frameworks:</h4>
-								<div class="tags is-centered"><span class="tag is-danger">PYTORCH</span><span class="tag is-danger">KERAS</span><span
-									 class="tag is-danger">TENSORFLOW</span><span class="tag is-danger">NUMPY</span><span class="tag is-danger">matplotlib</span>
-									 <span class="tag is-danger">django</span><span class="tag is-danger">mySQL</span></div>
-							
-							</div>
-						</div>
-					</div>			
-				</div>
-				<div class="has-background-light">
-					<br>
-					<br>
-	
-				</div>
-			</div>
-		</section>
-
-		<div class="has-background-light">
-				<br>
-				<br>
-
-		</div>
-
-		<div class="has-background-white-ter">
-				<br>
-				<br>
-
-		</div>
-
-		<section id="work" class="has-background-white-ter">
-				<div class="container">
-						<div class="has-background-white-ter">
-								<br>
-								<br>
-				
-						</div>
-					<div class="columns">
-						<div class="column is-one-quarter">
-							<h1 class="title">
-								Work
+					<div id="tabContent" class="media-content">
+						<div class="content has-text-centered">
+							<h1 class="is-1">
+								<i class="em em-male-technologist"></i>
 							</h1>
+							<h2 class="is-2">Python Developer</h2>
 							<p>
-								While pursuing my computer science degree, I am working on several personal projects.
-								Here are a few examples: 
-									
+								As a Python Developer, I enjoy simplyfying and atomating boring stuff as well as designing new neural architechtures that recognizes patterns in the
+								data, placing special attention on better optimizations and perfect hyperparameters.
 							</p>
+							<h4 class="is-4">Languages I Speak:</h4>
+							<div class="tags is-centered"><span class="tag is-info">Python</span><span class="tag is-info">SQL</span><span class="tag is-info">JavaScript</span><span class="tag is-info">C</span></div>
+
+
+							<h4 class="is-4">Development Tools:</h4>
+							<div class="tags is-centered"><span class="tag is-warning">GITHUB</span><span class="tag is-warning">Firebase</span><span class="tag is-warning">GIT</span><span class="tag is-warning">PIP</span><span class="tag is-warning">GOOGLE COLAB</span><span
+								  class="tag is-warning">VSCODE</span></div>
+
+
+
+							<h4 class="is-4">Frameworks:</h4>
+							<div class="tags is-centered"><span class="tag is-danger">PYTORCH</span><span class="tag is-danger">KERAS</span><span class="tag is-danger">TENSORFLOW</span><span class="tag is-danger">NUMPY</span><span class="tag is-danger">matplotlib</span>
+								<span class="tag is-danger">django</span><span class="tag is-danger">mySQL</span></div>
+
 						</div>
-						<div class="column">
-							<div class="columns">
-							  	<div class="column has-background-grey-lighter">
-								  	<a href="https://github.com/SubrataSarkar32/cat-dog-human-classifier/blob/master/cnn-for-animals-cat-dog-human.ipynb">
-										<div class="card has-background-grey-lighter">
-											<div class="card-image">
-												<figure class="image is-square">
-												<img src="https://camo.githubusercontent.com/70b1287a640626d5a9d27e8eb0d3947d3e2ebb7c/68747470733a2f2f7777772e6b6167676c6575736572636f6e74656e742e636f6d2f6b662f31353232393331382f65794a68624763694f694a6b615849694c434a6c626d4d694f694a424d54493451304a444c5568544d6a5532496e302e2e3546446d6c643965636475625a5578615f4d6d636a672e656c304773346c3861365566444f6f4154465777643041526731727176616b417867694f7978517870754d6f507a614e76397955356878367a353365796f786e6e347968486e4b4a4a6d335a7346753364387573727934365644526446584d4a7431325241445a6a6677474936493766387a314d6b4571324c65434a6450506378424c3249554d624d7875612d776c6e50554c544d78544c6a656d784f676d55325978456f657a547776552e445755304e6839565131316b4351654f72366d4b66772f5f5f726573756c74735f5f5f66696c65732f5f5f726573756c74735f5f5f32315f322e706e67" alt="Dog Image">
-												</figure>
-											</div>
-											<div class="card-content">
-												<div class="media">
-												<div class="media-content">
-													<p class="title is-4">Cat, Dog & human classifier</p>												  
-												</div>
-												</div>
-											
-												<div class="content">
-												<p class="has-text-black has-text-weight-light">
-													We used Keras to perform deep learning by building a convolutional neural network architechture called ensmbling 
-													model. This model provides around 80.44% accuracy which is great if we consider training data.
-												</p>
-														
-												<br>
-												
-												<div class="tags is-centered"><span class="tag is-danger">PYTHON</span><span class="tag is-danger">KERAS</span><span
-													class="tag is-danger">OPENCV</span>
-												</div>
-											</div>
-										</div>
-
-									</a>
-								</div>
-
-							  </div>
-							  <div class="column has-background-grey-lighter">
-								  <a href="https://github.com/SubrataSarkar32/finding-lanes">
-									<div class="card has-background-grey-lighter">
-										<div class="card-image">
-											<figure class="image ">
-												<img src="https://raw.githubusercontent.com/SubrataSarkar32/finding-lanes/master/result.jpg" alt="road">
-											</figure>
-										</div>
-										<div class="card-content">
-											<div class="media">
-												<div class="media-content">
-													<p class="title is-4">Lane finding</p>
-												</div>
-											</div>
-										
-											<div class="content">
-												<p class="has-text-black has-text-weight-light">
-													We opencv along with image processing techniques like Gaussian Blur , Canny edge detection and hough transform
-													so as to find out the lane in the image. This can also be applied on videos to find lanes but be careful this is basic:p.
-												</p>
-												
-												
-												<br>
-												
-												<div class="tags is-centered"><span class="tag is-danger">PYTHON</span><span class="tag is-danger">OPENCV</span><span
-													class="tag is-danger">NUMPY</span>
-												</div>
-											</div>
-										</div>
-										</div>
-									</a>
-							  </div>
-							  <div class="column has-background-grey-lighter">
-								  <a href="https://subratasarkar32.github.io/chatpit/">
-									<div class="card has-background-grey-lighter">
-											<div class="card-image">
-											  <figure class="image is-4by3">
-												<img src="https://subratasarkar32.github.io/chatpit/img/app-screenshots/Phone%20Screenshot%205.jpg" alt="Chatpit">
-											  </figure>
-											</div>
-											<div class="card-content">
-											  <div class="media">												
-												<div class="media-content">
-												  <p class="title is-4">Android chat app</p>
-												</div>
-											  </div>
-										  
-											  	<div class="content">
-												  	<p class="has-text-black has-text-weight-light">
-													A simple android cat app made with the help of Firebase and its free services.
-													This app offers image transfer options as well as screenshot protection.
-													Disclaimer: NO encryption provided users need to ensure that XD  
-													</p>
-																					
-												<br>
-												
-												<div class="tags is-centered"><span class="tag is-danger">ANDROID</span><span class="tag is-danger">FIREBASE</span>
-											  </div>
-											</div>
-										</div>
-									</a>
-							  	</div>
-							  
-							</div>
-						</div-->
-					</div>
-					<div class="has-background-white-ter">
-						<br>
-						<br>
-		
 					</div>
 				</div>
-			</section>
-
-			<div class="has-background-white-ter">
-					<br>
-					<br>
-	
 			</div>
-			
+			<div class="has-background-light">
+				<br>
+				<br>
 
-			
-			<section id="life" class="hero has-background-light">			
-				
-				  <div class="hero-body">
-					<div class="container has-text-centered">
-							<div class="columns">
-									<div class="column is-two-thirds is-offset-2 has-text-centered">
-													  
-											  <h1 class="title is-3">About Me</h1>
-			  
-											  <figure class="image is-128x128 center">
-												  <img class="is-rounded" src="https://i.imgur.com/H318YGT.jpg?1" title="source: imgur.com" />
-											  </figure>
-											  <br>
-											  <h2 class="subtitle is-5 has-text-centered">
-													  Hi!! I am Subrata, a <span id="age"></span> year old. I was always curiously interested in technology.<i class="em em-computer"></i> 
-													  I still remember when I was a kid and my relatives<i class="em em-man-man-girl-boy"></i> used to ask me what 
-													  I wanna do for the living which I used to answer "study computers"<i class="em em-male-technologist"></i>. But, I’m not all screens and keyboards. 
-													  I love storytelling, philosophy <i class="em em-thinking_face"></i>
-													   and art and crafts <i class="em em-performing_arts"></i>. 
-													  In 2016 python came in my life and it changed everything.It gave me wings and I started my journey into Computer Science.
-													  
-			  
-											  </h2>							
-											  
+			</div>
+		</div>
+	</section>
+
+	<div class="has-background-light">
+		<br>
+		<br>
+
+	</div>
+
+	<div class="has-background-white-ter">
+		<br>
+		<br>
+
+	</div>
+
+	<section id="work" class="has-background-white-ter">
+		<div class="container">
+			<div class="has-background-white-ter">
+				<br>
+				<br>
+
+			</div>
+			<div class="columns">
+				<div class="column is-one-quarter">
+					<h1 class="title">
+						Work
+					</h1>
+					<p>
+						While pursuing my computer science degree, I am working on several personal projects.
+						Here are a few examples:
+
+					</p>
+				</div>
+				<div class="column">
+					<div class="columns">
+						<div class="column has-background-grey-lighter">
+							<a href="https://github.com/SubrataSarkar32/cat-dog-human-classifier/blob/master/cnn-for-animals-cat-dog-human.ipynb">
+								<div class="card has-background-grey-lighter">
+									<div class="card-image">
+										<figure class="image is-square">
+											<img src="https://camo.githubusercontent.com/70b1287a640626d5a9d27e8eb0d3947d3e2ebb7c/68747470733a2f2f7777772e6b6167676c6575736572636f6e74656e742e636f6d2f6b662f31353232393331382f65794a68624763694f694a6b615849694c434a6c626d4d694f694a424d54493451304a444c5568544d6a5532496e302e2e3546446d6c643965636475625a5578615f4d6d636a672e656c304773346c3861365566444f6f4154465777643041526731727176616b417867694f7978517870754d6f507a614e76397955356878367a353365796f786e6e347968486e4b4a4a6d335a7346753364387573727934365644526446584d4a7431325241445a6a6677474936493766387a314d6b4571324c65434a6450506378424c3249554d624d7875612d776c6e50554c544d78544c6a656d784f676d55325978456f657a547776552e445755304e6839565131316b4351654f72366d4b66772f5f5f726573756c74735f5f5f66696c65732f5f5f726573756c74735f5f5f32315f322e706e67"
+											  alt="Dog Image">
+										</figure>
 									</div>
-								
-							  </div>
-					</div>
-				  </div>
-								
-			</section>
+									<div class="card-content">
+										<div class="media">
+											<div class="media-content">
+												<p class="title is-4">Cat, Dog & human classifier</p>
+											</div>
+										</div>
 
+										<div class="content">
+											<p class="has-text-black has-text-weight-light">
+												We used Keras to perform deep learning by building a convolutional neural network architechture called ensmbling
+												model. This model provides around 80.44% accuracy which is great if we consider training data.
+											</p>
 
-		
+											<br>
 
+											<div class="tags is-centered"><span class="tag is-danger">PYTHON</span><span class="tag is-danger">KERAS</span><span class="tag is-danger">OPENCV</span>
+											</div>
+										</div>
+									</div>
 
-			<section id="contact" class="hero is-light">
-					<div class="hero-body">
-						<div class="columns ">
-							<div class="column is-half is-offset-one-quarter has-text-centered">
-								<h1 class="title is-3 has-text-centered">
-									<strong> Let's get in touch </strong>
-								</h1>
-								<p class="content is-medium has-text-justified">
-									Need anything built, want to work together or simply want to have a chat? Drop me an e-mail at
-									<span class="btn btn-link has-text-info ">
-										<a href="mailto:subrotosarkar32@gmail.com " target="_blank" class="highlight-link">subrotosarkar32@gmail.com</a>
-									</span> and I will reply to you soon!
-								</p>
-
-								<dive class="buttons is-centered">
-									<a class="button is-dark" href="https://github.com/SubrataSarkar32">
-										<span class="icon">
-										<i class="fab fa-github"></i>
-										</span>
-										<span>GitHub</span>
-									</a>
-									<a class="button is-link" href="https://www.linkedin.com/in/subrata-sarkar-733905176/">
-										<span class="icon">
-											<i class="fab fa-linkedin"></i>
-										</span>
-										<span>LinkedIn</span>
-									</a>
-									<a class="button is-info" href="https://twitter.com/Subrata92545538?lang=en">
-										<span class="icon">
-											<i class="fab fa-twitter"></i>
-										</span>
-										<span>Twitter</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</section>
-			
-			
-			        <section id="contact" class="hero is-light">
-					<div class="hero-body">
-						<div class="columns ">
-							<div class="column is-half is-offset-one-quarter has-text-centered">
-								<h1 class="title is-3 has-text-centered">
-									<strong> Wan'na help me? </strong>
-								</h1>
-								<p class="content is-medium is-centered">
-									You can donate me via BHIM UPI
-																	
-								</p>
-
-								<div class="is-centered">
-									<img src="./images/Super sub.png" width="30%" height="30%">
-								</br>
-									<a href="upi://pay?pn=Subrata%20Sarakar&pa=9002824700%40upi&tn=Donation&am=&cu=INR&url=http%3A%2F%2Fupi.link%2F"><button class="buttonpay" style="vertical-align:middle"><span>Donate</span></button></a>
-									
-    
-								</div>
-							    </br>
-								<div class="is-centered">
-									Powered by<img src="./images/bhimupi.jpg" width="25%" height="25%">
-								</div>
-								<p class="content is-medium is-centered">
-									OR
-								    </br>
-									Scan this QR Code to open your UPI Payment App
-																	
-								</p>
-								<div class="is-centered">
-									<img src="./images/qrpay.png">
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</section>
-
-				<footer class="footer has-background-light">
-					<div class="content has-text-centered has-text-back has-background-light is-4">
-						<br>
-						<br>
-						<p class="">This website was handcrafted with <i class="em em-heart"></i> </p>
-							 
-						<p>	by Subrata Sarkar </p>
-						<p>
-							<a href="https://bulma.io">
-								<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="256" height="48">
 							</a>
-						</p>
-						<p>
-							Source code on <a href="https://github.com/SubrataSarkar32/subratasarkar32.github.io"><u class="has-text-black">Github</u> </a>.
-						</p>
+						</div>
+
 					</div>
-				</footer>
+					<div class="column has-background-grey-lighter">
+						<a href="https://github.com/SubrataSarkar32/finding-lanes">
+							<div class="card has-background-grey-lighter">
+								<div class="card-image">
+									<figure class="image ">
+										<img src="https://raw.githubusercontent.com/SubrataSarkar32/finding-lanes/master/result.jpg" width="25%" height="25%" alt="road">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="media">
+										<div class="media-content">
+											<p class="title is-4">Lane finding</p>
+										</div>
+									</div>
+
+									<div class="content">
+										<p class="has-text-black has-text-weight-light">
+											We opencv along with image processing techniques like Gaussian Blur , Canny edge detection and hough transform
+											so as to find out the lane in the image. This can also be applied on videos to find lanes but be careful this is basic:p.
+										</p>
 
 
-			
+										<br>
 
-		
+										<div class="tags is-centered"><span class="tag is-danger">PYTHON</span><span class="tag is-danger">OPENCV</span><span class="tag is-danger">NUMPY</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="column has-background-grey-lighter">
+						<a href="https://subratasarkar32.github.io/chatpit/">
+							<div class="card has-background-grey-lighter">
+								<div class="card-image">
+									<figure class="image">
+										<img src="https://subratasarkar32.github.io/chatpit/img/app-screenshots/Phone%20Screenshot%205.jpg" width="10%" height="10%" alt="Chatpit">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="media">
+										<div class="media-content">
+											<p class="title is-4">Android chat app</p>
+										</div>
+									</div>
 
-		<!-- All Other Scripts here -->
-		<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
-		<script>
+									<div class="content">
+										<p class="has-text-black has-text-weight-light">
+											A simple android cat app made with the help of Firebase and its free services.
+											This app offers image transfer options as well as screenshot protection.
+											Disclaimer: NO encryption provided users need to ensure that XD
+										</p>
 
-				// greetings typewriter 
-				var app = document.getElementById('hello');
+										<br>
 
-				var typewriter = new Typewriter(app, {
-					loop: true
-				});
-				
-				typewriter.typeString('Namaste!!')
-					.pauseFor(2500)
-					.deleteAll()
-					.typeString('Hello!!')
-					.pauseFor(2500)
-					.deleteAll()
-					.typeString('Konnichiwa!!')
-					.pauseFor(2500)
-					.deleteAll()
-					.typeString('Toki!!')
-					.pauseFor(2500)
-					.start();
-
-
-				
-
-				// Dynamic age 
-				var d = new Date();
-				var n = d.getFullYear();
-				var age = n -1998 - 1;
-				
-  				document.getElementById("age").innerHTML = age;
-				
-				
-				$(document).ready(function() {
-
-					// Check for click events on the navbar burger icon
-					$(".navbar-burger").click(function() {
-				  
-						// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-						$(".navbar-burger").toggleClass("is-active");
-						$(".navbar-menu").toggleClass("is-active");
-				  
-					});
-				});
-
-				// Navigation JQ
-				$("#homeB").click(function() {
-					$('html,body').animate({
-						scrollTop: $("#home").offset().top},
-						'slow');
-				});
-				$("#skillB").click(function() {
-					$('html,body').animate({
-						scrollTop: $("#skill").offset().top},
-						'slow');
-				});
-				
-				$("#workB").click(function() {
-					$('html,body').animate({
-						scrollTop: $("#work").offset().top},
-						'slow');
-				});
+										<div class="tags is-centered"><span class="tag is-danger">ANDROID</span><span class="tag is-danger">FIREBASE</span>
+										</div>
+									</div>
+								</div>
+						</a>
+					</div>
+				</div>
 
 
-				$("#lifeB").click(function() {
-					$('html,body').animate({
-						scrollTop: $("#life").offset().top},
-						'slow');
-				});
+			</div>
+			<div class="columns">
+				<div class="column">
+					<div class="columns">
+						<div class="column has-background-grey-lighter">
+							<a href="https://github.com/SubrataSarkar32/google-bert-multi-class-text-classifiation/blob/master/the-great-indian-data-sceintist-challenge.ipynb">
+								<div class="card has-background-grey-lighter">
+									<div class="card-image">
+										<figure class="image">
+											<img src="./images/multi-class-text-google-bert.png" alt="BERT result">
+										</figure>
+									</div>
+									<div class="card-content">
+										<div class="media">
+											<div class="media-content">
+												<p class="title is-4">Google BERT multi class text classification</p>
+											</div>
+										</div>
 
-				$("#contactB").click(function() {
-					$('html,body').animate({
-						scrollTop: $("#contact").offset().top},
-						'slow');
-				});
+										<div class="content">
+											<p class="has-text-black has-text-weight-light">
+												We used Google BERT uncased model with Tensorflow to predict product category from product description.
+												 This model provides around 92.48% accuracy on validation dataset which is great if we consider training data.
+											</p>
+
+											<br>
+
+											<div class="tags is-centered"><span class="tag is-danger">PYTHON</span><span class="tag is-danger">TENSORFLOW</span><span class="tag is-danger">goole-BERT</span>
+											</div>
+										</div>
+									</div>
+
+							</a>
+						</div>
+
+					</div>
+					<div class="column has-background-grey-lighter">
+						<a href="">
+							<div class="card has-background-grey-lighter">
+								<div class="card-image">
+									<figure class="image ">
+										<img src="" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="media">
+										<div class="media-content">
+											<p class="title is-4"></p>
+										</div>
+									</div>
+
+									<div class="content">
+										<p class="has-text-black has-text-weight-light">
+											
+										</p>
+
+
+										<br>
+
+										<!--div class="tags is-centered"><span class="tag is-danger">PYTHON</span><span class="tag is-danger">OPENCV</span><span class="tag is-danger">NUMPY</span>
+										</div-->
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="column has-background-grey-lighter">
+						<a href="">
+							<div class="card has-background-grey-lighter">
+								<div class="card-image">
+									<figure class="image">
+										<img src="" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="media">
+										<div class="media-content">
+											<p class="title is-4"></p>
+										</div>
+									</div>
+
+									<div class="content">
+										<p class="has-text-black has-text-weight-light">
+											
+										</p>
+
+										<br>
+
+										<!--div class="tags is-centered"><span class="tag is-danger">ANDROID</span><span class="tag is-danger">FIREBASE</span>
+										</div-->
+									</div>
+								</div>
+						</a>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+		<div class="has-background-white-ter">
+			<br>
+			<br>
+
+		</div>
+		</div>
+	</section>
+
+	<div class="has-background-white-ter">
+		<br>
+		<br>
+
+	</div>
 
 
 
-				
+	<section id="life" class="hero has-background-light">
+
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<div class="columns">
+					<div class="column is-two-thirds is-offset-2 has-text-centered">
+
+						<h1 class="title is-3">About Me</h1>
+
+						<figure class="image is-128x128 center">
+							<a href="https://imgur.com/JcKoLgY"><img class="is-rounded" src="https://i.imgur.com/JcKoLgY.jpg" title="source: imgur.com" /></a>
+						</figure>
+						<br>
+						<h2 class="subtitle is-5 has-text-centered">
+							Hi!! I am Subrata, a <span id="age"></span> year old. I was always curiously interested in technology.<i class="em em-computer"></i>
+							I still remember when I was a kid and my relatives<i class="em em-man-man-girl-boy"></i> used to ask me what
+							I wanna do for the living which I used to answer "study computers"<i class="em em-male-technologist"></i>. But, I’m not all screens and keyboards.
+							I love storytelling, philosophy <i class="em em-thinking_face"></i>
+							and art and crafts <i class="em em-performing_arts"></i>.
+							In 2016 python came in my life and it changed everything.It gave me wings and I started my journey into Computer Science.
+
+
+						</h2>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
 
 
 
-				
 
 
+	<section id="contact" class="hero is-light">
+		<div class="hero-body">
+			<div class="columns ">
+				<div class="column is-half is-offset-one-quarter has-text-centered">
+					<h1 class="title is-3 has-text-centered">
+						<strong> Let's get in touch </strong>
+					</h1>
+					<p class="content is-medium has-text-justified">
+						Need anything built, want to work together or simply want to have a chat? Drop me an e-mail at
+						<span class="btn btn-link has-text-info ">
+							<a href="mailto:subrotosarkar32@gmail.com " target="_blank" class="highlight-link">subrotosarkar32@gmail.com</a>
+						</span> and I will reply to you soon!
+					</p>
+
+					<dive class="buttons is-centered">
+						<a class="button is-dark" href="https://github.com/SubrataSarkar32">
+							<span class="icon">
+								<i class="fab fa-github"></i>
+							</span>
+							<span>GitHub</span>
+						</a>
+						<a class="button is-link" href="https://www.linkedin.com/in/subrata-sarkar-733905176/">
+							<span class="icon">
+								<i class="fab fa-linkedin"></i>
+							</span>
+							<span>LinkedIn</span>
+						</a>
+						<a class="button is-info" href="https://twitter.com/Subrata92545538?lang=en">
+							<span class="icon">
+								<i class="fab fa-twitter"></i>
+							</span>
+							<span>Twitter</span>
+						</a>
+						<a class="button is-danger" href="https://www.youtube.com/channel/UCHXqiKNwL47_0SudARGJNOg">
+							<span class="icon">
+								<i class="fab fa-youtube"></i>
+							</span>
+							<span>YouTube</span>
+						</a>
+				</div>
+			</div>
+		</div>
+		</div>
+
+	</section>
+
+
+	<section id="contact" class="hero is-light">
+		<div class="hero-body">
+			<div class="columns ">
+				<div class="column is-half is-offset-one-quarter has-text-centered">
+					<h1 class="title is-3 has-text-centered">
+						<strong> Wan'na help me? </strong>
+					</h1>
+					<p class="content is-medium is-centered">
+						You can donate via BHIM UPI
+
+					</p>
+
+					<div class="is-centered">
+						<img src="./images/Super sub.png" width="30%" height="30%">
+						</br>
+						<a href="upi://pay?pn=Subrata%20Sarakar&pa=9002824700%40upi&tn=Donation&am=&cu=INR&url=http%3A%2F%2Fupi.link%2F"><button class="buttonpay" style="vertical-align:middle"><span>Donate</span></button></a>
+
+
+					</div>
+					</br>
+					<div class="is-centered">
+						Powered by<img src="./images/bhimupi.jpg" width="25%" height="25%">
+					</div>
+					<p class="content is-medium is-centered">
+						OR
+						</br>
+						Scan this QR Code to open your UPI Payment App
+
+					</p>
+					<div class="is-centered">
+						<img src="./images/qrpay.png">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="footer has-background-light">
+		<div class="content has-text-centered has-text-back has-background-light is-4">
+			<br>
+			<br>
+			<p class="">This website was handcrafted with <i class="em em-heart"></i> </p>
+
+			<p> by Subrata Sarkar </p>
+			<p>
+				<a href="https://bulma.io">
+					<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="256" height="48">
+				</a>
+			</p>
+			<p>
+				Source code on <a href="https://github.com/SubrataSarkar32/subratasarkar32.github.io"><u class="has-text-black">Github</u> </a>.
+			</p>
+		</div>
+	</footer>
+
+
+
+
+
+
+	<!-- All Other Scripts here -->
+	<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+	<script>
+		// greetings typewriter
+		var app = document.getElementById('hello');
+
+		var typewriter = new Typewriter(app, {
+			loop: true
+		});
+
+		typewriter.typeString('Namaste!!')
+			.pauseFor(2500)
+			.deleteAll()
+			.typeString('Hello!!')
+			.pauseFor(2500)
+			.deleteAll()
+			.typeString('Konnichiwa!!')
+			.pauseFor(2500)
+			.deleteAll()
+			.typeString('Toki!!')
+			.pauseFor(2500)
+			.start();
+
+
+
+
+		// Dynamic age
+		var d = new Date();
+		var n = d.getFullYear();
+		var age = n - 1998 - 1;
+
+		document.getElementById("age").innerHTML = age;
+
+
+		$(document).ready(function() {
+
+			// Check for click events on the navbar burger icon
+			$(".navbar-burger").click(function() {
+
+				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+				$(".navbar-burger").toggleClass("is-active");
+				$(".navbar-menu").toggleClass("is-active");
+
+			});
+		});
+
+		// Navigation JQ
+		$("#homeB").click(function() {
+			$('html,body').animate({
+					scrollTop: $("#home").offset().top
+				},
+				'slow');
+		});
+		$("#skillB").click(function() {
+			$('html,body').animate({
+					scrollTop: $("#skill").offset().top
+				},
+				'slow');
+		});
+
+		$("#workB").click(function() {
+			$('html,body').animate({
+					scrollTop: $("#work").offset().top
+				},
+				'slow');
+		});
+
+
+		$("#lifeB").click(function() {
+			$('html,body').animate({
+					scrollTop: $("#life").offset().top
+				},
+				'slow');
+		});
+
+		$("#contactB").click(function() {
+			$('html,body').animate({
+					scrollTop: $("#contact").offset().top
+				},
+				'slow');
+		});
 	</script>
-	
 
-	</body>
+
+</body>
+
 </html>
